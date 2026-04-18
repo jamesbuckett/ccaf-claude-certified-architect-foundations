@@ -3,8 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A visual study guide for the Claude Certified Architect – Foundations (CCA-F) exam by Anthropic.">
-<title>CCA-F Visual Study Guide · Claude Certified Architect – Foundations</title>
+<meta name="description" content="Free visual study guide for Anthropic's Claude Certified Architect – Foundations (CCA-F) exam. Five domains mapped, 15-question mock quiz, printable cheat sheet.">
+<link rel="canonical" href="https://YOUR-DOMAIN/">
+<title>CCA-F Visual Study Guide — Pass Anthropic's Architect Exam</title>
+
+<!-- Open Graph / LinkedIn / Slack / Discord -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="CCA-F Visual Study Guide — Pass Anthropic's Architect Exam">
+<meta property="og:description" content="Free, unofficial visual study guide for the Claude Certified Architect – Foundations exam. Five domains, 15-question mock, printable cheat sheet.">
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="CCA-F Visual Study Guide — five domain roadmap diagram">
+<meta property="og:site_name" content="CCA-F Atlas">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CCA-F Visual Study Guide">
+<meta name="twitter:description" content="Unofficial visual study guide for Anthropic's Claude Certified Architect – Foundations exam. Diagrams, scenarios, and a 15-question mock.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN/og-image.png">
+<meta name="twitter:creator" content="@jamesbuckett">
+
+<!-- JSON-LD: LearningResource + Course reference -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "CCA-F Visual Study Guide",
+  "description": "Unofficial, diagram-first study guide for Anthropic's Claude Certified Architect – Foundations (CCA-F) certification exam. Covers five exam domains, six production scenarios, and includes a 15-question mock quiz.",
+  "url": "https://YOUR-DOMAIN/",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "learningResourceType": "Study Guide",
+  "educationalLevel": "Associate",
+  "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "AI engineers, solution architects, developers"
+  },
+  "teaches": [
+    "Agentic architecture and orchestration",
+    "Model Context Protocol (MCP) and tool design",
+    "Claude Code configuration and workflows",
+    "Prompt engineering and structured output",
+    "Context management and reliability"
+  ],
+  "about": {
+    "@type": "Course",
+    "name": "Claude Certified Architect – Foundations (CCA-F)",
+    "provider": {
+      "@type": "Organization",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com"
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "James Buckett",
+    "url": "https://github.com/jamesbuckett",
+    "jobTitle": "Product Manager"
+  },
+  "dateModified": "2026-04-19"
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this guide official? Is it affiliated with Anthropic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This is an independent study resource written and maintained by James Buckett. It is not affiliated with, endorsed by, or reviewed by Anthropic. Always cross-check critical details against Anthropic's official exam page before sitting the exam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How current is this guide? When was it last updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Last updated April 2026 (v2026.03). The guide is versioned against the CCA-F blueprint published by Anthropic. If Anthropic changes the exam blueprint, domain weights, or scoring model, the guide may lag by a few weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What experience do I need before attempting the CCA-F?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anthropic positions the CCA-F as an associate-level certification. Most passers have at least 6 months of hands-on work with Claude Code, the Claude API, MCP servers, and real agent loops in production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this different from reading Anthropic's official documentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anthropic's docs are exhaustive but not exam-shaped. This guide is structured around the five exam domains and their relative weights, and gives practice in the scenario-question format the exam uses. Use the official docs as the source of truth; use this guide to know where to look."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I actually register for the exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Registration runs through Anthropic's certification portal. The exam is remotely proctored, 60 questions over 120 minutes, scored 100–1,000, with 720 to pass. Registration fee at time of writing is $99 USD."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I found an error or want to suggest an improvement. How?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open an issue on the GitHub repo linked in the footer, or DM the author on the social links in the hero. Corrections and new practice questions are welcome."
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -884,6 +1004,379 @@
   .reveal.in { opacity: 1; transform: translateY(0); }
   .divider { height: 1px; background: var(--border); margin: var(--s-5) 0; }
   svg { display: block; }
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0);
+    white-space: nowrap; border: 0;
+  }
+
+  /* ============================================================
+     HERO ADDITIONS — audience, CTA row, byline creds, disclaimer
+     ============================================================ */
+  .hero-audience {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin: var(--s-4) 0 var(--s-3);
+    max-width: 60ch;
+    line-height: 1.5;
+  }
+  .hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s-3);
+    margin-top: var(--s-5);
+    margin-bottom: var(--s-5);
+  }
+  .hero-cta {
+    text-decoration: none;
+    padding: var(--s-3) var(--s-5);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    transition: transform 150ms ease, background-color 150ms ease, border-color 150ms ease, opacity 150ms ease;
+  }
+  .hero-cta:hover { transform: translateY(-1px); }
+  .hero-cta:focus-visible {
+    outline: 2px solid var(--d1);
+    outline-offset: 3px;
+  }
+  .hero-byline-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-byline-primary {
+    display: flex;
+    align-items: center;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+  }
+  .hero-byline-creds {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+  .hero-disclaimer {
+    margin-top: var(--s-4);
+    padding-top: var(--s-3);
+    border-top: 1px dashed var(--border);
+    font-size: 0.72rem;
+    color: var(--text-faint);
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 72ch;
+  }
+
+  /* ============================================================
+     DOMAIN HEADER (now <button> inside <h3>)
+     ============================================================ */
+  .domain-heading {
+    /* neutralise default h3 styling — the button carries the visual weight */
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 0;
+    line-height: inherit;
+  }
+  /* Override .domain-header styling because it's now a <button> */
+  button.domain-header {
+    width: 100%;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+  }
+  button.domain-header:focus-visible {
+    outline: 2px solid var(--d1);
+    outline-offset: -2px;
+    background: var(--surface-2);
+  }
+  .domain-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .domain-header-text .domain-title { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.01em; }
+  .domain-header-text .domain-sub { font-size: 0.85rem; color: var(--text-dim); font-weight: 400; }
+
+  /* ============================================================
+     QUIZ NEXT STEPS (post-results CTA strip)
+     ============================================================ */
+  .quiz-next {
+    margin-top: var(--s-5);
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s-5);
+    flex-wrap: wrap;
+  }
+  .quiz-next-prompt { flex: 1; min-width: 240px; }
+  .quiz-next-headline {
+    font-size: 0.95rem;
+    margin-top: 4px;
+    color: var(--text);
+  }
+  .quiz-next-actions {
+    display: flex;
+    gap: var(--s-2);
+    flex-wrap: wrap;
+  }
+  .quiz-next-actions .btn { text-decoration: none; }
+
+  /* ============================================================
+     FAQ
+     ============================================================ */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+    max-width: 860px;
+  }
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    overflow: hidden;
+    transition: border-color 150ms ease;
+  }
+  .faq-item[open] { border-color: var(--border-strong); }
+  .faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s-4);
+    padding: var(--s-4) var(--s-5);
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    font-size: 0.98rem;
+    user-select: none;
+    color: var(--text);
+  }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q:hover { background: var(--surface-2); }
+  .faq-q:focus-visible {
+    outline: 2px solid var(--d1);
+    outline-offset: -2px;
+  }
+  .faq-chev {
+    flex-shrink: 0;
+    color: var(--text-dim);
+    transition: transform 200ms ease;
+  }
+  .faq-item[open] .faq-chev { transform: rotate(180deg); }
+  .faq-a {
+    padding: 0 var(--s-5) var(--s-5);
+    border-top: 1px solid var(--border);
+    padding-top: var(--s-4);
+  }
+  .faq-a p { color: var(--text-dim); font-size: 0.92rem; line-height: 1.65; margin: 0; }
+  .faq-a a { color: var(--text); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+  /* ============================================================
+     REGISTER SECTION
+     ============================================================ */
+  .register-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: var(--s-7);
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .register-grid { grid-template-columns: 1fr; }
+  }
+  .register-primary {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    border-radius: 10px;
+    padding: var(--s-6);
+  }
+  .register-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-5);
+    margin-bottom: var(--s-6);
+  }
+  .register-step {
+    display: flex;
+    gap: var(--s-4);
+    align-items: flex-start;
+  }
+  .register-step-num {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    letter-spacing: 0.08em;
+  }
+  .register-step-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .register-step-body {
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  .register-cta-row {
+    display: flex;
+    gap: var(--s-3);
+    flex-wrap: wrap;
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--border);
+  }
+  .register-cta {
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-tips {
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--d3);
+    background: var(--surface);
+    border-radius: 6px;
+    padding: var(--s-5);
+  }
+  .register-tips .faint { margin-bottom: var(--s-3); display: block; }
+  .register-tip-list {
+    margin: 0;
+    padding-left: var(--s-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-3);
+  }
+  .register-tip-list li {
+    font-size: 0.88rem;
+    color: var(--text-dim);
+    line-height: 1.55;
+  }
+
+  /* Email capture */
+  .email-capture {
+    margin-top: var(--s-7);
+    padding: var(--s-6);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--s-5);
+    align-items: center;
+  }
+  @media (max-width: 720px) {
+    .email-capture { grid-template-columns: 1fr; }
+  }
+  .email-capture-head {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-top: 4px;
+  }
+  .email-capture-sub {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  .email-capture-row {
+    display: flex;
+    gap: var(--s-2);
+  }
+  .email-capture-input {
+    flex: 1;
+    min-width: 0;
+    padding: var(--s-3) var(--s-4);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.9rem;
+    transition: border-color 150ms ease;
+  }
+  .email-capture-input:focus {
+    outline: none;
+    border-color: var(--text);
+  }
+  .email-capture-status {
+    grid-column: 1 / -1;
+    font-size: 0.78rem;
+    color: var(--ok);
+    min-height: 1em;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  .site-footer {
+    border-top: 1px solid var(--border);
+    background: var(--surface);
+    padding: var(--s-8) var(--s-7) var(--s-6);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--s-7);
+    margin-bottom: var(--s-7);
+  }
+  @media (max-width: 860px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+  @media (max-width: 560px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+  .footer-col-head {
+    margin-bottom: var(--s-3);
+    display: block;
+  }
+  .footer-disclaimer {
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 48ch;
+    margin: 0;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+  }
+  .footer-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 150ms ease;
+  }
+  .footer-links a:hover { color: var(--text); }
+  .footer-links a:focus-visible {
+    outline: 2px solid var(--d1);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  .footer-base {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--s-4);
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--border);
+    font-size: 0.72rem;
+    flex-wrap: wrap;
+  }
 </style>
 </head>
 <body>
@@ -920,6 +1413,8 @@
         <li><a class="nav-item" href="#quiz"><span class="nav-num">06</span>Practice Quiz</a></li>
         <li><a class="nav-item" href="#glossary"><span class="nav-num">07</span>Glossary</a></li>
         <li><a class="nav-item" href="#cheat-sheet"><span class="nav-num">08</span>Cheat Sheet</a></li>
+        <li><a class="nav-item" href="#faq"><span class="nav-num">09</span>FAQ</a></li>
+        <li><a class="nav-item" href="#register"><span class="nav-num">10</span>Register</a></li>
       </ul>
     </nav>
 
@@ -957,10 +1452,21 @@
         <div>
           <div class="hero-stamp">
             <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg>
-            LAUNCHED 12 MARCH 2026 · ANTHROPIC
+            UPDATED APR 2026 · UNOFFICIAL STUDY GUIDE
           </div>
-          <h1>Your visual<br>path to the <em>CCA-F</em>.</h1>
-          <p class="hero-lede">A complete, diagram-first study guide for the Claude Certified Architect — Foundations exam. Five domains, six scenarios, fifteen practice questions, one printable cheat sheet.</p>
+          <p class="hero-audience">For AI engineers and solution architects sitting Anthropic's CCA-F exam in the next 12 weeks.</p>
+          <h1>Pass Anthropic's <em>CCA-F</em> exam.<br>Visually.</h1>
+          <p class="hero-lede">Cut your CCA-F prep from months to weeks. Every exam domain mapped to a diagram, a production scenario, and a drilled flashcard — with a 15-question mock and a printable one-page cheat sheet.</p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary hero-cta" href="#quiz">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+              Start the 15-question mock
+            </a>
+            <a class="btn hero-cta" href="#cheat-sheet">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Grab the cheat sheet
+            </a>
+          </div>
           <div class="hero-meta">
             <div class="hero-meta-item"><span class="mono">60</span><span class="caps">Questions</span></div>
             <div class="hero-meta-item"><span class="mono">120m</span><span class="caps">Time</span></div>
@@ -970,9 +1476,14 @@
           <div class="hero-byline">
             <div class="hero-byline-author">
               <span class="hero-byline-label">By</span>
-              <span class="hero-byline-name">James Buckett</span>
-              <span class="hero-byline-sep" aria-hidden="true"></span>
-              <span class="hero-byline-title">Product Manager</span>
+              <div class="hero-byline-identity">
+                <div class="hero-byline-primary">
+                  <span class="hero-byline-name">James Buckett</span>
+                  <span class="hero-byline-sep" aria-hidden="true"></span>
+                  <span class="hero-byline-title">Product Manager</span>
+                </div>
+                <div class="hero-byline-creds">Writes about agentic systems. Sat the CCA-F to build this guide.</div>
+              </div>
             </div>
             <div class="hero-byline-social">
               <a class="hero-byline-link" href="https://github.com/jamesbuckett" target="_blank" rel="noopener noreferrer" aria-label="GitHub: jamesbuckett">
@@ -989,6 +1500,7 @@
               </a>
             </div>
           </div>
+          <p class="hero-disclaimer">Independent study resource. Not affiliated with or endorsed by Anthropic. "Claude" and "CCA-F" are trademarks of their respective owners.</p>
         </div>
         <div class="hero-roadmap" id="heroRoadmap">
           <svg viewBox="0 0 480 360" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" aria-label="Exam roadmap">
@@ -1056,7 +1568,7 @@
             <span class="section-num">01 /</span>
             <span class="caps">Exam at a Glance</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">Six numbers to know.</h2>
+          <h2 style="margin-top: var(--s-3)">Exam at a glance: six key numbers</h2>
         </div>
         <span class="section-tag">Study all 6 scenarios</span>
       </div>
@@ -1098,9 +1610,9 @@
           <div class="tile-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <div class="tile-value">~301</div>
-          <div class="tile-label">Difficulty Level</div>
-          <div class="tile-note">6+ months hands-on experience</div>
+          <div class="tile-value">6+<span style="font-size:1rem; color: var(--text-dim)">mo</span></div>
+          <div class="tile-label">Experience Expected</div>
+          <div class="tile-note">Associate-level · hands-on with Claude Code and agent patterns</div>
         </div>
         <div class="tile reveal">
           <div class="tile-icon">
@@ -1123,23 +1635,25 @@
             <span class="section-num">02 /</span>
             <span class="caps">Domain Deep-Dives</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">Five domains, unevenly weighted.</h2>
+          <h2 style="margin-top: var(--s-3)">Five exam domains, ranked by weight</h2>
         </div>
         <span class="section-tag">Click any domain to expand</span>
       </div>
 
       <!-- DOMAIN 1 — AGENTIC -->
       <article class="domain" id="domain-1" data-open="true" data-domain="1">
-        <header class="domain-header" onclick="toggleDomain(this)">
-          <div class="domain-chip d1-bg">01</div>
-          <div>
-            <div class="domain-title">Agentic Architecture &amp; Orchestration</div>
-            <div class="domain-sub">Heaviest domain · orchestrator-worker patterns, sub-agents, delegation</div>
-          </div>
-          <div class="domain-weight d1-ink">27%</div>
-          <div class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </header>
-        <div class="domain-body">
+        <h3 class="domain-heading">
+          <button type="button" class="domain-header" aria-expanded="true" aria-controls="domain-1-body" onclick="toggleDomain(this)">
+            <span class="domain-chip d1-bg">01</span>
+            <span class="domain-header-text">
+              <span class="domain-title">Agentic Architecture &amp; Orchestration</span>
+              <span class="domain-sub">Heaviest domain · orchestrator-worker patterns, sub-agents, delegation</span>
+            </span>
+            <span class="domain-weight d1-ink">27%</span>
+            <span class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+        </h3>
+        <div class="domain-body" id="domain-1-body">
           <div class="domain-grid">
             <div class="stat-box">
               <!-- Donut -->
@@ -1151,7 +1665,7 @@
                 <text x="70" y="68" text-anchor="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="currentColor">27%</text>
                 <text x="70" y="88" text-anchor="middle" font-family="Atkinson Hyperlegible" font-size="10" fill="var(--text-dim)">of exam</text>
               </svg>
-              <div class="stat-label">Heaviest domain</div>
+              <div class="stat-label">~16 of 60 questions</div>
             </div>
             <div>
               <div class="caps muted">Task Statements — what you must DO</div>
@@ -1233,16 +1747,18 @@
 
       <!-- DOMAIN 2 — TOOLS/MCP -->
       <article class="domain" id="domain-2" data-domain="2">
-        <header class="domain-header" onclick="toggleDomain(this)">
-          <div class="domain-chip d2-bg">02</div>
-          <div>
-            <div class="domain-title">Tool Design &amp; MCP Integration</div>
-            <div class="domain-sub">Tools, resources, prompt templates — and error recovery patterns</div>
-          </div>
-          <div class="domain-weight d2-ink">~20%</div>
-          <div class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </header>
-        <div class="domain-body">
+        <h3 class="domain-heading">
+          <button type="button" class="domain-header" aria-expanded="false" aria-controls="domain-2-body" onclick="toggleDomain(this)">
+            <span class="domain-chip d2-bg">02</span>
+            <span class="domain-header-text">
+              <span class="domain-title">Tool Design &amp; MCP Integration</span>
+              <span class="domain-sub">Tools, resources, prompt templates — and error recovery patterns</span>
+            </span>
+            <span class="domain-weight d2-ink">~20%</span>
+            <span class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+        </h3>
+        <div class="domain-body" id="domain-2-body">
           <div class="domain-grid">
             <div class="stat-box">
               <svg width="140" height="140" viewBox="0 0 140 140" aria-label="~20% weight">
@@ -1253,7 +1769,7 @@
                 <text x="70" y="68" text-anchor="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="currentColor">20%</text>
                 <text x="70" y="88" text-anchor="middle" font-family="Atkinson Hyperlegible" font-size="10" fill="var(--text-dim)">of exam</text>
               </svg>
-              <div class="stat-label">Second largest</div>
+              <div class="stat-label">~12 of 60 questions</div>
             </div>
             <div>
               <div class="caps muted">Task Statements — what you must DO</div>
@@ -1325,16 +1841,18 @@
 
       <!-- DOMAIN 3 — CLAUDE CODE -->
       <article class="domain" id="domain-3" data-domain="3">
-        <header class="domain-header" onclick="toggleDomain(this)">
-          <div class="domain-chip d3-bg">03</div>
-          <div>
-            <div class="domain-title">Claude Code Configuration &amp; Workflows</div>
-            <div class="domain-sub">CLAUDE.md, skills, slash commands, hooks, sub-agents in Claude Code</div>
-          </div>
-          <div class="domain-weight d3-ink">20%</div>
-          <div class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </header>
-        <div class="domain-body">
+        <h3 class="domain-heading">
+          <button type="button" class="domain-header" aria-expanded="false" aria-controls="domain-3-body" onclick="toggleDomain(this)">
+            <span class="domain-chip d3-bg">03</span>
+            <span class="domain-header-text">
+              <span class="domain-title">Claude Code Configuration &amp; Workflows</span>
+              <span class="domain-sub">CLAUDE.md, skills, slash commands, hooks, sub-agents in Claude Code</span>
+            </span>
+            <span class="domain-weight d3-ink">20%</span>
+            <span class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+        </h3>
+        <div class="domain-body" id="domain-3-body">
           <div class="domain-grid">
             <div class="stat-box">
               <svg width="140" height="140" viewBox="0 0 140 140">
@@ -1344,7 +1862,7 @@
                 <text x="70" y="68" text-anchor="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="currentColor">20%</text>
                 <text x="70" y="88" text-anchor="middle" font-family="Atkinson Hyperlegible" font-size="10" fill="var(--text-dim)">of exam</text>
               </svg>
-              <div class="stat-label">Tied for second</div>
+              <div class="stat-label">~12 of 60 questions</div>
             </div>
             <div>
               <div class="caps muted">Task Statements — what you must DO</div>
@@ -1414,16 +1932,18 @@
 
       <!-- DOMAIN 4 — PROMPT ENGINEERING -->
       <article class="domain" id="domain-4" data-domain="4">
-        <header class="domain-header" onclick="toggleDomain(this)">
-          <div class="domain-chip d4-bg">04</div>
-          <div>
-            <div class="domain-title">Prompt Engineering &amp; Structured Output</div>
-            <div class="domain-sub">XML tags, tool-use for JSON, system prompts, few-shot patterns</div>
-          </div>
-          <div class="domain-weight d4-ink">~17%</div>
-          <div class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </header>
-        <div class="domain-body">
+        <h3 class="domain-heading">
+          <button type="button" class="domain-header" aria-expanded="false" aria-controls="domain-4-body" onclick="toggleDomain(this)">
+            <span class="domain-chip d4-bg">04</span>
+            <span class="domain-header-text">
+              <span class="domain-title">Prompt Engineering &amp; Structured Output</span>
+              <span class="domain-sub">XML tags, tool-use for JSON, system prompts, few-shot patterns</span>
+            </span>
+            <span class="domain-weight d4-ink">~17%</span>
+            <span class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+        </h3>
+        <div class="domain-body" id="domain-4-body">
           <div class="domain-grid">
             <div class="stat-box">
               <svg width="140" height="140" viewBox="0 0 140 140">
@@ -1433,7 +1953,7 @@
                 <text x="70" y="68" text-anchor="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="currentColor">~17%</text>
                 <text x="70" y="88" text-anchor="middle" font-family="Atkinson Hyperlegible" font-size="10" fill="var(--text-dim)">of exam</text>
               </svg>
-              <div class="stat-label">Small but foundational</div>
+              <div class="stat-label">~10 of 60 · foundation for D1, D2</div>
             </div>
             <div>
               <div class="caps muted">Task Statements — what you must DO</div>
@@ -1511,16 +2031,18 @@
 
       <!-- DOMAIN 5 — CONTEXT -->
       <article class="domain" id="domain-5" data-domain="5">
-        <header class="domain-header" onclick="toggleDomain(this)">
-          <div class="domain-chip d5-bg">05</div>
-          <div>
-            <div class="domain-title">Context Management &amp; Reliability</div>
-            <div class="domain-sub">Prompt caching, memory tool, compaction, "lost in the middle"</div>
-          </div>
-          <div class="domain-weight d5-ink">~16%</div>
-          <div class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        </header>
-        <div class="domain-body">
+        <h3 class="domain-heading">
+          <button type="button" class="domain-header" aria-expanded="false" aria-controls="domain-5-body" onclick="toggleDomain(this)">
+            <span class="domain-chip d5-bg">05</span>
+            <span class="domain-header-text">
+              <span class="domain-title">Context Management &amp; Reliability</span>
+              <span class="domain-sub">Prompt caching, memory tool, compaction, "lost in the middle"</span>
+            </span>
+            <span class="domain-weight d5-ink">~16%</span>
+            <span class="chevron"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></span>
+          </button>
+        </h3>
+        <div class="domain-body" id="domain-5-body">
           <div class="domain-grid">
             <div class="stat-box">
               <svg width="140" height="140" viewBox="0 0 140 140">
@@ -1530,7 +2052,7 @@
                 <text x="70" y="68" text-anchor="middle" font-family="JetBrains Mono" font-size="22" font-weight="600" fill="currentColor">~16%</text>
                 <text x="70" y="88" text-anchor="middle" font-family="Atkinson Hyperlegible" font-size="10" fill="var(--text-dim)">of exam</text>
               </svg>
-              <div class="stat-label">Smallest domain</div>
+              <div class="stat-label">~10 of 60 questions</div>
             </div>
             <div>
               <div class="caps muted">Task Statements — what you must DO</div>
@@ -1615,7 +2137,7 @@
             <span class="section-num">03 /</span>
             <span class="caps">Scenario Gallery</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">Six production scenarios. Study all.</h2>
+          <h2 style="margin-top: var(--s-3)">Six production scenarios (four appear on the exam)</h2>
         </div>
         <span class="section-tag">4 appear on exam · drawn randomly</span>
       </div>
@@ -1633,14 +2155,14 @@
             <span class="section-num">04 /</span>
             <span class="caps">Mental Models Library</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">Five shapes that answer half the exam.</h2>
+          <h2 style="margin-top: var(--s-3)">Five mental models that recur across domains</h2>
         </div>
       </div>
 
       <div class="models-grid">
         <!-- Hub and spoke -->
         <article class="model">
-          <div class="model-title">Hub-and-Spoke Orchestration</div>
+          <h3 class="model-title">Hub-and-Spoke Orchestration</h3>
           <p class="model-body">One orchestrator delegates to independent workers. Each worker runs in its own context; results return as summaries. No worker-to-worker edges.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1679,7 +2201,7 @@
 
         <!-- CLAUDE.md pyramid -->
         <article class="model">
-          <div class="model-title">CLAUDE.md Hierarchy Pyramid</div>
+          <h3 class="model-title">CLAUDE.md Hierarchy Pyramid</h3>
           <p class="model-body">Three levels, broad to specific. Closer to the code = higher precedence. User-level is always you; project-level is team; subdir-level overrides for scope.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1698,7 +2220,7 @@
 
         <!-- MCP triangle -->
         <article class="model">
-          <div class="model-title">MCP Primitives Triangle</div>
+          <h3 class="model-title">MCP Primitives Triangle</h3>
           <p class="model-body">Tools are model-invoked. Resources are app-controlled data. Prompts are user-invoked templates. Picking the wrong primitive is a top exam trap.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1724,7 +2246,7 @@
 
         <!-- JSON schema retry loop -->
         <article class="model">
-          <div class="model-title">JSON Schema Validation Retry Loop</div>
+          <h3 class="model-title">JSON Schema Validation Retry Loop</h3>
           <p class="model-body">Call with tool-use → parse response → validate against schema → on fail, return validator error back to the model and retry. Cap retries.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1760,7 +2282,7 @@
 
         <!-- Lost in the middle -->
         <article class="model">
-          <div class="model-title">"Lost in the Middle" Placement</div>
+          <h3 class="model-title">"Lost in the Middle" Placement</h3>
           <p class="model-body">Language models attend strongly to the start and end of context. Information buried in the middle has measurably lower recall.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1781,7 +2303,7 @@
 
         <!-- Agentic loop -->
         <article class="model">
-          <div class="model-title">The Agentic Loop</div>
+          <h3 class="model-title">The Agentic Loop</h3>
           <p class="model-body">Think → Act (tool call) → Observe (tool result) → Think again. Terminates on a stop condition, a final answer, or a safety cap.</p>
           <div class="model-svg-wrap">
             <svg viewBox="0 0 300 220">
@@ -1820,7 +2342,7 @@
             <span class="section-num">05 /</span>
             <span class="caps">12-Week Study Plan</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">A Gantt that checks itself off.</h2>
+          <h2 style="margin-top: var(--s-3)">12-week study plan (progress saved locally)</h2>
         </div>
         <span class="section-tag">State saved locally</span>
       </div>
@@ -1854,7 +2376,7 @@
             <span class="section-num">06 /</span>
             <span class="caps">Practice Quiz</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">15 questions. Instant feedback.</h2>
+          <h2 style="margin-top: var(--s-3)">15-question mock exam with instant feedback</h2>
         </div>
         <span class="section-tag" id="quizTimer">00:00</span>
       </div>
@@ -1875,7 +2397,7 @@
             <span class="section-num">07 /</span>
             <span class="caps">Visual Glossary</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">Type to filter. Click a chip to pin a domain.</h2>
+          <h2 style="margin-top: var(--s-3)">Visual glossary (filter by domain)</h2>
         </div>
       </div>
 
@@ -1911,7 +2433,7 @@
             <span class="section-num">08 /</span>
             <span class="caps">Printable Cheat Sheet</span>
           </div>
-          <h2 style="margin-top: var(--s-3)">One page. All five domains.</h2>
+          <h2 style="margin-top: var(--s-3)">One-page cheat sheet (print-ready)</h2>
         </div>
       </div>
 
@@ -1995,6 +2517,215 @@
         </div>
       </div>
     </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section id="faq">
+      <div class="section-head">
+        <div>
+          <div class="section-eyebrow">
+            <span class="section-num">09 /</span>
+            <span class="caps">Frequently Asked Questions</span>
+          </div>
+          <h2 style="margin-top: var(--s-3)">Answers to the six questions everyone asks</h2>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>Is this guide official? Is it affiliated with Anthropic?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>No. This is an independent study resource written and maintained by James Buckett. It is not affiliated with, endorsed by, or reviewed by Anthropic. Always cross-check critical details against Anthropic's official exam page before sitting the exam.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>How current is this guide? When was it last updated?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>Last updated April 2026 (v2026.03). The guide is versioned against the CCA-F blueprint published by Anthropic. If Anthropic changes the exam blueprint, domain weights, or scoring model, the guide may lag by a few weeks — watch the GitHub repo for changelog entries.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>What experience do I need before attempting the CCA-F?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>Anthropic positions the CCA-F as an associate-level certification. In practice, most passers have at least 6 months of hands-on work with Claude Code, the Claude API, MCP servers, and real agent loops in production (or close to it). If you've never shipped anything with sub-agents or tools, spend a few weeks building before you study.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>How is this different from reading Anthropic's official documentation?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>Anthropic's docs are exhaustive but not exam-shaped. This guide is structured around the five exam domains and their relative weights, emphasises the patterns Anthropic keeps contrasting (hub-and-spoke vs mesh, tool vs resource vs prompt, hook vs skill), and gives you practice in the scenario-question format the exam actually uses. Use the official docs as the source of truth; use this guide to know where to look.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>How do I actually register for the exam?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>Registration runs through Anthropic's certification portal — see the "Ready to register?" section below for the official link. The exam is remotely proctored, 60 questions over 120 minutes, scored 100–1,000, with 720 to pass. Registration fee at time of writing is $99 USD.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">
+            <span>I found an error or want to suggest an improvement. How?</span>
+            <svg class="faq-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-a">
+            <p>Open an issue on the <a href="https://github.com/jamesbuckett" target="_blank" rel="noopener noreferrer">GitHub repo</a>, or DM the author on the social links in the hero. Corrections and new practice questions are welcome — this guide improves fastest when readers flag what confused them.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REGISTER — closing CTA
+         ============================================================ -->
+    <section id="register">
+      <div class="section-head">
+        <div>
+          <div class="section-eyebrow">
+            <span class="section-num">10 /</span>
+            <span class="caps">Ready to Register?</span>
+          </div>
+          <h2 style="margin-top: var(--s-3)">You've done the work. Book the exam.</h2>
+        </div>
+      </div>
+
+      <div class="register-grid">
+        <div class="register-primary">
+          <div class="register-steps">
+            <div class="register-step">
+              <span class="register-step-num mono">01</span>
+              <div>
+                <div class="register-step-title">Create an Anthropic account</div>
+                <div class="register-step-body">If you don't already have one. You'll use the same login for the certification portal.</div>
+              </div>
+            </div>
+            <div class="register-step">
+              <span class="register-step-num mono">02</span>
+              <div>
+                <div class="register-step-title">Pick an exam slot</div>
+                <div class="register-step-body">Pay the $99 USD registration. Slots are remotely proctored — you'll get a system check email ahead of time.</div>
+              </div>
+            </div>
+            <div class="register-step">
+              <span class="register-step-num mono">03</span>
+              <div>
+                <div class="register-step-title">Sit the exam</div>
+                <div class="register-step-body">60 questions, 120 minutes, scored 100–1,000, pass at 720. You'll see results on-screen at the end.</div>
+              </div>
+            </div>
+          </div>
+          <div class="register-cta-row">
+            <a class="btn btn-primary register-cta" href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Go to Anthropic certification
+            </a>
+            <a class="btn register-cta" href="#cheat-sheet">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print cheat sheet first
+            </a>
+          </div>
+        </div>
+
+        <aside class="register-tips" aria-labelledby="exam-day-tips">
+          <div class="caps faint" id="exam-day-tips">Exam-day tips</div>
+          <ul class="register-tip-list">
+            <li>Budget ~2 min per question. Flag the hard ones, come back.</li>
+            <li>Eliminate absolutes ("always", "never") — usually wrong in scenario questions.</li>
+            <li>When two answers look right, pick the one that handles the failure case.</li>
+            <li>If stuck between <em>skill</em>, <em>hook</em>, and <em>slash command</em>: ask who triggers it.</li>
+            <li>If stuck on MCP primitives: ask who initiates (model / app / user).</li>
+          </ul>
+        </aside>
+      </div>
+
+      <form class="email-capture" onsubmit="event.preventDefault(); this.querySelector('.email-capture-status').textContent='Thanks — wire this form to your list provider.';">
+        <div class="email-capture-text">
+          <div class="caps faint">Optional</div>
+          <div class="email-capture-head">Get notified when this guide is updated.</div>
+          <div class="email-capture-sub">New practice questions, blueprint changes, and corrections. No spam.</div>
+        </div>
+        <div class="email-capture-row">
+          <label class="visually-hidden" for="email-input">Email address</label>
+          <input id="email-input" class="email-capture-input" type="email" required placeholder="you@example.com" autocomplete="email">
+          <button type="submit" class="btn btn-primary">Notify me</button>
+        </div>
+        <div class="email-capture-status mono"></div>
+      </form>
+    </section>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="brand" style="margin-bottom: var(--s-3)">
+            <div class="brand-mark">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            </div>
+            <div>
+              <div class="brand-name">CCA-F Atlas</div>
+              <div class="brand-sub mono">v2026.03 · updated Apr 2026</div>
+            </div>
+          </div>
+          <p class="footer-disclaimer">Independent study resource. Not affiliated with or endorsed by Anthropic. "Claude", "Claude Code", and "CCA-F" are trademarks of their respective owners. Exam format, fees, and passing scores are accurate as of April 2026 — always verify against the official Anthropic certification page before registering.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="caps faint footer-col-head">Official resources</div>
+          <ul class="footer-links">
+            <li><a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer">Anthropic certification portal</a></li>
+            <li><a href="https://docs.anthropic.com/" target="_blank" rel="noopener noreferrer">Claude API docs</a></li>
+            <li><a href="https://docs.anthropic.com/claude/docs/claude-code" target="_blank" rel="noopener noreferrer">Claude Code docs</a></li>
+            <li><a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener noreferrer">Model Context Protocol</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="caps faint footer-col-head">This guide</div>
+          <ul class="footer-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#cheat-sheet">Cheat sheet</a></li>
+            <li><a href="#quiz">Mock exam</a></li>
+            <li><a href="https://github.com/jamesbuckett" target="_blank" rel="noopener noreferrer">Feedback &amp; corrections</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="caps faint footer-col-head">Author</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/jamesbuckett" target="_blank" rel="noopener noreferrer">GitHub · jamesbuckett</a></li>
+            <li><a href="https://www.linkedin.com/in/jamesbuckett" target="_blank" rel="noopener noreferrer">LinkedIn · jamesbuckett</a></li>
+            <li><a href="https://twitter.com/jamesbuckett" target="_blank" rel="noopener noreferrer">X · @jamesbuckett</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <div class="mono faint">© 2026 James Buckett · Content CC-BY 4.0 · Code MIT</div>
+        <div class="mono faint">Last updated 2026-04-19</div>
+      </div>
+    </footer>
 
   </main>
 </div>
@@ -2721,6 +3452,16 @@ function showResults() {
             <text x="${lx}" y="${ly + 4}" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="var(--d${d})" font-weight="600">D${d}</text>`;
   }).join('');
 
+  // Weakest domain = lowest accuracy (ties broken by lowest domain number for determinism)
+  const DOMAIN_NAMES = { "1": "Agentic Architecture", "2": "Tools & MCP", "3": "Claude Code", "4": "Prompt Engineering", "5": "Context Management" };
+  let weakestD = "1";
+  let weakestAcc = 2;
+  axes.forEach(d => {
+    const acc = domainTotals[d] > 0 ? domainCorrect[d] / domainTotals[d] : 1;
+    if (acc < weakestAcc) { weakestAcc = acc; weakestD = d; }
+  });
+  const weakestPct = Math.round(weakestAcc * 100);
+
   quizResults.innerHTML = `
     <div class="quiz-progress">
       <div class="mono" style="font-size: 0.78rem; color: var(--text-dim)">Final Score</div>
@@ -2753,12 +3494,28 @@ function showResults() {
         </svg>
       </div>
     </div>
-    <div style="margin-top: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
-      <div style="font-size: 0.85rem; color: var(--text-dim)">Focus your remaining study on domains with the lowest radar value.</div>
-      <button class="btn btn-primary" onclick="restartQuiz()">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 3v6h6"/></svg>
-        Retake quiz
-      </button>
+    <div class="quiz-next">
+      <div class="quiz-next-prompt">
+        <div class="caps faint">Where to go next</div>
+        <div class="quiz-next-headline">
+          Your weakest domain: <span class="d${weakestD}-ink" style="font-weight: 700">D${weakestD} · ${DOMAIN_NAMES[weakestD]}</span>
+          <span class="faint mono" style="font-size: 0.8rem; margin-left: 6px">(${weakestPct}%)</span>
+        </div>
+      </div>
+      <div class="quiz-next-actions">
+        <a class="btn" href="#domain-${weakestD}">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>
+          Review D${weakestD} now
+        </a>
+        <a class="btn" href="#cheat-sheet">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          Print cheat sheet
+        </a>
+        <button class="btn btn-primary" onclick="restartQuiz()">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 3v6h6"/></svg>
+          Retake quiz
+        </button>
+      </div>
     </div>
   `;
   quizResults.classList.add('show');
@@ -2799,9 +3556,12 @@ themeToggle.addEventListener('click', () => {
 /* ============================================================
    DOMAIN ACCORDION
    ============================================================ */
-function toggleDomain(header) {
-  const domain = header.parentElement;
-  domain.setAttribute('data-open', domain.getAttribute('data-open') === 'true' ? 'false' : 'true');
+function toggleDomain(trigger) {
+  // trigger is the <button>; its parent is <h3.domain-heading>; its grandparent is <article.domain>
+  const domain = trigger.closest('.domain');
+  const willOpen = domain.getAttribute('data-open') !== 'true';
+  domain.setAttribute('data-open', willOpen ? 'true' : 'false');
+  trigger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
 }
 
 /* ============================================================
@@ -2814,7 +3574,7 @@ document.querySelectorAll('.nav-item').forEach(a => a.addEventListener('click', 
 /* ============================================================
    SCROLL PROGRESS + ACTIVE NAV
    ============================================================ */
-const sectionIds = ['hero','at-a-glance','domains','scenarios','mental-models','study-plan','quiz','glossary','cheat-sheet'];
+const sectionIds = ['hero','at-a-glance','domains','scenarios','mental-models','study-plan','quiz','glossary','cheat-sheet','faq','register'];
 const navItems = document.querySelectorAll('.sidebar .nav-list .nav-item');
 
 function updateProgress() {
